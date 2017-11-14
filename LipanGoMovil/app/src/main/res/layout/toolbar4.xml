@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool2"
+    android:minHeight="69dp"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="REGISTRAR"
+    android:theme="@style/AlertDialog.AppCompat"
+    android:elevation="7dp"
+    app:subtitle="Ingrese los datos del nuevo ususario"
+    app:titleTextColor="@android:color/background_light"
+    app:subtitleTextColor="@android:color/background_light">
+</android.support.v7.widget.Toolbar>

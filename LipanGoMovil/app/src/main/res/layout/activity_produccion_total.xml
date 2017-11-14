@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="android.alberto.app.lipangomovil.Produccion_total"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_modificar_produccion"></include>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/modificar_produccion_total"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:onClick="Registrar"
+                android:text="Registrar Produccion" />
+
+            <Button
+                android:id="@+id/ver_registros"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Ver y Editar Produccion" />
+
+            <Button
+                android:id="@+id/regresar_edicion"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Regresar" />
+        </TableRow>
+
+    </TableLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nombre_e"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/hora_e"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="TextView" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:text="Pan Blanco"
+                        >
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+
+            <!-- <TextView
+                        android:id="@+id/apellido_usuario_d_pd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="60dp"
+                        android:text="TextView" />-->
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:hint="Cantidad Bolillo"
+
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bolillo_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:ems="7"
+                            android:inputType="number|numberDecimal"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Bolillo Chico"
+                        android:layout_marginTop="40dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bolillo_chico_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginStart="5dp"
+                            android:inputType="number"
+
+                            android:theme="@style/EditText"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Bolillo Mignon"
+                        android:layout_marginTop="40dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bolillo_mignon_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pan Acimo"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pan_acimo_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="8"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pambazo">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pambazo_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pambazo Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pambazo_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Telera Estandar"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/telera_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Telera Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/telera_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:text="Pan dulce"
+                        >
+                    </TextView>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Bola de Leche"
+                        android:layout_marginStart="10dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bola_leche_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Croissant Estandar">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/cuernito_estandar_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Croissant Chico">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/cuernito_chico_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Croissant Mignon"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/cuernito_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pan Dulce Estandar ">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pan_dulce_estandar_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pan Dulce Chico">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pan_dulce_chico_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Dona Especial"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/dona_especial_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Dona Sencilla ">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/dona_sencilla_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Acambareno Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/acambarero_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Concha Grande"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/concha_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Tortuga Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/tortuga_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Kilos de Pastel"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pastel_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:text="Reposteria"
+                        >
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Merengue Estandar"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/merengue_estandar_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Merengue de Cafe Chico">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/merengue_cafe_chico_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Merengue Chico">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/merengue_chico_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Pasta de Hojaldre"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pasta_hojaldra_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad de Reposteria 1 ">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/reposteria_1_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Reposteria 2">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/reposteria_2_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Reposteria 3"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/reposteria_3_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Reposteria 4">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/reposteria_4_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad Reposteria 5">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/reposteria_5_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:text="Loncheria"
+                        >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Hamburguesa estandar"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/hamburguesa_estandar_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Hamburguesa Chica">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/hamburguesa_chica_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Pizza Mini">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pizza_mini_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Pizza Chica"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pizza_chica_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Pizza Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pizza_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Pizza Mediana">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pizza_mediana_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Piezas Pizza Extra Grande">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pizza_extra_grande_e"
+                            style="@style/AppTheme.FloatingLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:inputType="number"
+                            android:theme="@style/EditText" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+

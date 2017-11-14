@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="android.alberto.app.lipangomovil.Administrador">
+    <include layout="@layout/toolbar_admin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="regresar"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="Registar" />
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/consultar_p"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="consultar proveedores" />
+
+        <Button
+            android:id="@+id/consultar_m"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="Consultar materiales" />
+
+    </LinearLayout>
+
+</LinearLayout>

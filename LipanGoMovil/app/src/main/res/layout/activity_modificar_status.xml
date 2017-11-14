@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.alberto.app.lipangomovil.ModificarStatus">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/ed_status"
+            android:hint="Cambiar Status"
+            android:layout_gravity="center_horizontal|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:text="Actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_actualizar"
+            android:onClick="actualizar" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ret"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="87dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:adjustViewBounds="true"
+        android:contentDescription="@android:string/cancel"
+        android:cropToPadding="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:visibility="visible" />
+
+</LinearLayout>

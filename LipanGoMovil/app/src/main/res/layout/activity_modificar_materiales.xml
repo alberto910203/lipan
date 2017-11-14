@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    tools:context="android.alberto.app.lipangomovil.Modificar_materiales">
+    <Button
+        android:text="Regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ret"
+        android:layout_gravity="end"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|number"
+            android:id="@+id/ed_stock_base"
+            android:hint="Cambiar Stock Base"
+            android:layout_gravity="center_horizontal|center"
+            android:selectAllOnFocus="true"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|number"
+            android:ems="10"
+            android:id="@+id/ed_stock_actual"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:hint="Cambiar Stock Actual"
+            android:singleLine="true"
+            android:selectAllOnFocus="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:text="Actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_actualizar"
+            android:layout_marginEnd="20dp"
+            android:onClick="Actualizar_Stocks" />
+
+        <Button
+            android:text="C. Proveedores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bton_proveedores"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:onClick="Ver_Proveedores" />
+</LinearLayout>
+    </LinearLayout>

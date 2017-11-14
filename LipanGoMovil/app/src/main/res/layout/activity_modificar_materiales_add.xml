@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        layout="@layout/toolbar_modificar_materiales"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/include5"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"></include>
+
+
+    <Button
+        android:id="@+id/mofificar"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="modificar_materiales"
+        android:text="modificar"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/cancelar"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cancelar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hora_mod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/mofificar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Almidon Imsa"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_12">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/almidon_imsa_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Manteca Flor de Jalisco"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_10"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/manteca_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Margarina San Antonio"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_13">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/margarina_san_antonio_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Margarina Utarella"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_16">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/margarina_utarella_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cobertura de Chocolate Garfias"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_18"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/cobertura_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Polvo Para Hornear Puratos"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_17"
+        tools:layout_editor_absoluteX="92dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/polvo_hornear_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tupan Puratos"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_19"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tupan_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Royal Tupan Puratos"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_20">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/royal_tupan_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Piloncillo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_21"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/piloncillo_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Huevo"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_22">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/huevo_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Leche"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_25"
+        tools:layout_editor_absoluteX="92dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/leche_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_11"
+        android:layout_width="187dp"
+        android:layout_height="47dp"
+        android:hint="Pasta Pastel Dawn"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_15"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pasta_dawn_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Azucar Estandar Central"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_9"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/azucar_estandar_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Azucar Refinada Siglo XXI"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_7"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/azucar_refinada_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Coco Rayado"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_6">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/coco_rayado_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="6"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Harina Centenario"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_8"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/harina_centenario_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="8"
+
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Chocolate Ganache"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_27"
+        tools:layout_editor_absoluteX="92dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/chocolate_ganache_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Maicena"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_23">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/maicena_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="35dp"
+        android:hint="Harina Indistinta"
+        android:paddingEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/cancelar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/harina_indistinta_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="8"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_6"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Harina Guadalupe Roja"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_5">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/harina_guadalupe_roja_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="9"
+            android:inputType="number"
+
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginTop="9dp"
+        android:hint="Harina Guadalupe Azul"
+        app:layout_constraintTop_toBottomOf="@+id/hora_mod"
+        tools:layout_editor_absoluteX="88dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/harina_guadalupe_azul_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Relleno de Fresa San Antonio"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_11"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/relleno_fresa_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sal de Mar"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_24"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_8">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sal_m"
+            style="@style/AppTheme.FloatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    >
+
+
+</android.support.constraint.ConstraintLayout>

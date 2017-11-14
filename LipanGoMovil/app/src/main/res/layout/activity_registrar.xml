@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.alberto.app.lipangomovil.Registrar"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar4"></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            >
+
+            <Button
+                android:id="@+id/regresar_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="50dp"
+                android:elevation="14dp"
+                android:text="Salir" />
+
+            <EditText
+                android:id="@+id/name_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NOMBRE"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/apellido_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="APELLIDO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/pass_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CONTRASENA"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+                android:inputType="textPassword"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/puesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PUESTO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/perfilpuesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PERFIL PUESTO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/nombre_corto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NOMBRE CORTO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <Spinner
+                android:id="@+id/spTipos"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="TIPO USUARIO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/nivel_acceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NIVEL ACCESO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="number"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="STATUS"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/rfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RFC"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType=""
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/curp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CURP"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPhonetic"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/nss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NSS"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/domicilio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DOMICILIO"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/telefono1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="TELEFONO 1"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="phone|number"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/telefono2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="TELEFONO 2"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="phone"
+                android:paddingTop="20dp" />
+
+            <Button
+                android:id="@+id/Agregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="insertar"
+                android:text="Agregar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

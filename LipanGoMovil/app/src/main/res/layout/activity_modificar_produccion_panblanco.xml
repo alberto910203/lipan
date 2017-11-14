@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.alberto.app.lipangomovil.Modificar_produccion_panblanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+
+            <!--<TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/mofificar"
+                        android:onClick="modificar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="modificar" />
+
+                    <Button
+                        android:id="@+id/cancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="cancelar" />
+                </TableRow>
+
+            </TableLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_domi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fecha_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hora">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/hora_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Bolillo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_bolillo_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Bolillo Chico">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_bolillo_chico_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Bolillo Mignon">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_bolillo_mignon_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Pan Acimo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_pan_acimo_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Pambazo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_pambazo_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad Pambazo Grande">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cant_pambazo_grande_m"
+                    style="@style/AppTheme.FloatingLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="20dp"
+                    android:theme="@style/EditText" />
+
+            </android.support.design.widget.TextInputLayout>
+-->
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

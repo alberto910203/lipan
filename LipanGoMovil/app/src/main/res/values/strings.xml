@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LipanGoMovil</string>
+    <string name="mandatory">Error escriba su Nombre</string>
+    <string name="mandatory1">Error escriba su Apellido</string>
+    <string name="mandatory2">Error escriba su Contrasena.</string>
+    <string name="mandatory3">Error escriba  su Usuario.</string>
+    <string-array name="tipos">
+        <item>Seleccione el Tipo de Usuario</item>
+        <item>Administrador</item>
+        <item>Ventas Sucursal</item>
+        <item>Ventas Reparto</item>
+        <item>Limpieza</item>
+        <item>Produccion</item>
+        <item>Jefe de Produccion</item>
+        <item>Asistente Gerencial</item>
+    </string-array>
+</resources>

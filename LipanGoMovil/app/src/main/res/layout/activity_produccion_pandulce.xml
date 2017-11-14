@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.alberto.app.lipangomovil.Produccion_panblanco"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_lista_produccion_pd"></include>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            >
+
+            <!--<Button
+                android:id="@+id/registra_produccion"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="registrar_produccion_pandulce"
+                android:background="@color/indigo"
+                android:text="Registrar produccion"
+                android:textAppearance="@style/AppTheme.FloatingLabel" />
+-->
+            <Button
+                android:id="@+id/refrescar"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Refrescar"
+                android:textAppearance="@style/AppTheme.FloatingLabel" />
+
+            <Button
+                android:id="@+id/regresar"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Regresar"
+                android:textAppearance="@style/AppTheme.FloatingLabel" />
+        </TableRow>
+
+
+
+        <TextView android:text="Lista de produccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="#1040ff"
+            android:layout_margin = "10dp"
+            />
+
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/indigo"
+                android:dividerHeight="15dp"
+                android:drawSelectorOnTop="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lista Vacía"
+
+                />
+
+
+        </FrameLayout>
+    </TableLayout>
+</LinearLayout>
